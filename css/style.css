@@ -48,9 +48,18 @@ body {
 .nav-toggle {
   display: none;
   background: transparent;
-  border: 1px solid var(--line);
-  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--accent);
+  padding: 0.5rem 0.6rem;
   border-radius: 4px;
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 1.5rem;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.nav-toggle:hover {
+  background: rgba(0, 217, 255, 0.1);
 }
 
 .site-nav ul {
@@ -59,10 +68,19 @@ body {
   gap: 1rem;
 }
 
+.site-nav {
+  transition: all 0.3s ease;
+}
+
 .site-nav a {
   text-decoration: none;
   color: var(--text);
   padding: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
 }
 
 .hero {
@@ -79,9 +97,37 @@ body {
 
 @media (max-width: 720px) {
   .nav-toggle { display: inline-block; }
-  .site-nav { display: none; }
-  .site-nav.open { display: block; }
-  .site-nav ul { flex-direction: column; gap: 0.5rem; }
+  
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    padding: 1rem;
+    flex-direction: column;
+    z-index: 100;
+  }
+  
+  .site-nav.open {
+    display: flex;
+  }
+  
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .site-nav li {
+    border-bottom: 1px solid rgba(224, 232, 255, 0.1);
+    padding-bottom: 0.5rem;
+  }
+  
+  .site-nav li:last-child {
+    border-bottom: none;
+  }
 }
 
 /* Quiz tweaks */
@@ -92,7 +138,7 @@ body {
 /* Panel / framed section */
 .panel {
   background: #ffffff;
-  border: 1px solid #e5e7eb;
+  border: none;
   border-radius: 10px;
   padding: 1.25rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
@@ -100,14 +146,8 @@ body {
 }
 .panel a.btn { margin-top: 0.75rem; display: inline-block; }
 
-.content.panel {
-  border: 2px solid #0066ff;
-  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.15);
-}
-
 .info-panel {
-  background: #ffffff;
-  border-top: 3px solid #dbeafe;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
 }
 
 .section-heading {
@@ -145,12 +185,11 @@ body {
 }
 
 .info-card p {
-  color: #6b7280;
+  color: #111111;
 }
 
 .difficulty-panel {
-  background: #ffffff;
-  border-top: 3px solid #fed7d0;
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
 }
 
 .difficulty-grid {
@@ -196,7 +235,7 @@ body {
 }
 
 .difficulty-card p {
-  color: #6b7280;
+  color: #111111;
 }
 
 .overview-hero {
@@ -258,10 +297,12 @@ body {
 
 .overview-card {
   background: #ffffff;
-  border: 2px solid #0066ff;
+  border-left: 4px solid var(--accent);
+  border-top: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 1.2rem;
-  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.1);
 }
 
 .overview-card h3 {
@@ -270,7 +311,7 @@ body {
 
 .overview-card p,
 .flow-list span {
-  color: #6b7280;
+  color: #111111;
 }
 
 .history-grid {
@@ -301,7 +342,7 @@ body {
 
 .history-card p,
 .records-note {
-  color: #6b7280;
+  color: #111111;
 }
 
 .results-table-wrap {
@@ -399,7 +440,7 @@ body {
 }
 
 .news-item p {
-  color: #6b7280;
+  color: #111111;
 }
 
 .venue-layout {
@@ -449,7 +490,7 @@ body {
 }
 
 .map-placeholder p {
-  color: #6b7280;
+  color: #111111;
 }
 
 .access-list {
@@ -467,7 +508,7 @@ body {
 }
 
 .access-list span {
-  color: #6b7280;
+  color: #111111;
 }
 
 .application-panel {
@@ -522,7 +563,7 @@ body {
 
 .form-fieldset label,
 .agree-field {
-  color: #6b7280;
+  color: #111111;
   font-weight: 400;
 }
 
@@ -603,7 +644,7 @@ body {
 /* Kyoto Tech-inspired editorial theme */
 :root {
   --bg: #ffffff;
-  --surface: #0f1a2e;
+  --surface: #ffffff;
   --accent: #00d9ff;
   --text: #111827;
   --muted: #6b7280;
