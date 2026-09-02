@@ -101,7 +101,7 @@ body {
 .panel a.btn { margin-top: 0.75rem; display: inline-block; }
 
 .info-panel {
-  background: #f9fafb;
+  background: #ffffff;
   border-top: 3px solid #dbeafe;
 }
 
@@ -144,7 +144,7 @@ body {
 }
 
 .difficulty-panel {
-  background: #fef3f2;
+  background: #ffffff;
   border-top: 3px solid #fed7d0;
 }
 
