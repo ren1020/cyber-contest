@@ -101,7 +101,8 @@ body {
 .panel a.btn { margin-top: 0.75rem; display: inline-block; }
 
 .info-panel {
-  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  background: #f9fafb;
+  border-top: 3px solid #dbeafe;
 }
 
 .section-heading {
@@ -143,7 +144,8 @@ body {
 }
 
 .difficulty-panel {
-  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  background: #fef3f2;
+  border-top: 3px solid #fed7d0;
 }
 
 .difficulty-grid {
