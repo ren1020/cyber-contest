@@ -6,11 +6,11 @@
 }
 
 :root {
-  --bg: #f7f7f7;
-  --surface: #ffffff;
-  --accent: #0066ff;
-  --text: #111827;
-  --muted: #6b7280;
+  --bg: #0a0f1a;
+  --surface: #0f1a2e;
+  --accent: #00d9ff;
+  --text: #e0e8ff;
+  --muted: #7a8aa8;
   --container: 1100px;
 }
 
@@ -29,7 +29,7 @@ body {
 
 .site-header {
   background: var(--surface);
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--line);
 }
 
 .site-header .container {
@@ -48,7 +48,7 @@ body {
 .nav-toggle {
   display: none;
   background: transparent;
-  border: 1px solid #ddd;
+  border: 1px solid var(--line);
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
 }
@@ -92,16 +92,16 @@ body {
 /* Panel / framed section */
 .panel {
   background: var(--surface);
-  border: 1px solid #e6e6e6;
+  border: 1px solid var(--line);
   border-radius: 10px;
   padding: 1.25rem;
-  box-shadow: 0 4px 10px rgba(16,24,40,0.04);
+  box-shadow: 0 4px 10px rgba(0, 217, 255, 0.1);
   margin: 1rem 0;
 }
 .panel a.btn { margin-top: 0.75rem; display: inline-block; }
 
 .info-panel {
-  background: linear-gradient(180deg, #ffffff 0%, #f3f7ff 100%);
+  background: linear-gradient(180deg, #0f1a2e 0%, #0a1628 100%);
 }
 
 .section-heading {
@@ -125,17 +125,17 @@ body {
 }
 
 .info-card {
-  background: #fff;
-  border: 1px solid #dfe9ff;
+  background: #0a1628;
+  border: 1px solid var(--line);
   border-radius: 12px;
   padding: 1.1rem;
-  box-shadow: 0 8px 20px rgba(0, 102, 255, 0.04);
+  box-shadow: 0 8px 20px rgba(0, 217, 255, 0.1);
 }
 
 .info-card h3 {
   font-size: 1.1rem;
   margin-bottom: 0.6rem;
-  color: #0f172a;
+  color: #00d9ff;
 }
 
 .info-card p {
@@ -143,7 +143,7 @@ body {
 }
 
 .difficulty-panel {
-  background: linear-gradient(180deg, #f7faff 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #0a1628 0%, #0f1a2e 100%);
 }
 
 .difficulty-grid {
@@ -153,8 +153,8 @@ body {
 }
 
 .difficulty-card {
-  background: #fff;
-  border: 1px solid #e5e7eb;
+  background: #0a1628;
+  border: 1px solid var(--line);
   border-radius: 12px;
   padding: 1.2rem;
 }
@@ -169,18 +169,18 @@ body {
 }
 
 .beginner .level-tag {
-  background: #e8f7ee;
-  color: #117a45;
+  background: rgba(0, 217, 255, 0.15);
+  color: #00d9ff;
 }
 
 .intermediate .level-tag {
-  background: #fff4d6;
-  color: #a66a00;
+  background: rgba(255, 200, 0, 0.15);
+  color: #ffc800;
 }
 
 .advanced .level-tag {
-  background: #ffe8e8;
-  color: #b42318;
+  background: rgba(255, 51, 51, 0.15);
+  color: #ff3333;
 }
 
 .difficulty-card h3 {
@@ -192,7 +192,7 @@ body {
 }
 
 .overview-hero {
-  background: linear-gradient(135deg, #0f4c81 0%, #0066ff 100%);
+  background: linear-gradient(135deg, #0d1b2a 0%, #1a3a5a 100%);
   color: #fff;
   padding: 3rem 1.5rem;
   margin: 1rem 0;
@@ -200,7 +200,7 @@ body {
 }
 
 .overview-hero .eyebrow {
-  color: #dbeafe;
+  color: #00d9ff;
 }
 
 .overview-hero h1 {
@@ -211,14 +211,14 @@ body {
 }
 
 .overview-summary {
-  background: #fff;
+  background: #0a1628;
 }
 
 .summary-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--line);
 }
 
 .summary-list div {
@@ -226,7 +226,7 @@ body {
   grid-template-columns: minmax(6rem, 0.7fr) 1.3fr;
   gap: 1rem;
   padding: 1rem 0;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--line);
 }
 
 .summary-list dt {
@@ -251,9 +251,9 @@ body {
 .overview-card {
   background: var(--surface);
   border-left: 4px solid var(--accent);
-  border-top: 1px solid #e5e7eb;
-  border-right: 1px solid #e5e7eb;
-  border-bottom: 1px solid #e5e7eb;
+  border-top: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
   border-radius: 8px;
   padding: 1.2rem;
 }
@@ -278,9 +278,9 @@ body {
   gap: 1rem;
   align-items: start;
   padding: 1rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--line);
   border-radius: 8px;
-  background: #fff;
+  background: #0a1628;
 }
 
 .history-year {
@@ -312,12 +312,12 @@ body {
 .results-table td {
   padding: 0.85rem 1rem;
   text-align: left;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--line);
 }
 
 .results-table thead th {
-  background: #eff5ff;
-  color: #0f4c81;
+  background: #1a3a4a;
+  color: #00d9ff;
 }
 
 .results-table tbody th {
@@ -340,7 +340,7 @@ body {
   background: var(--surface);
   padding: 1.5rem;
   border-radius: 0.5rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--line);
 }
 
 .stat-card h3 {
@@ -375,7 +375,7 @@ body {
   grid-template-columns: 7rem 1fr;
   gap: 1rem;
   padding: 1rem 0;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--line);
 }
 
 .news-item:last-child {
@@ -411,7 +411,7 @@ body {
   grid-template-columns: 6rem 1fr;
   gap: 1rem;
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--line);
 }
 
 .venue-details dt {
@@ -428,9 +428,9 @@ body {
   place-items: center;
   align-content: center;
   min-height: 15rem;
-  border: 1px dashed #9db9e8;
+  border: 1px dashed var(--accent);
   border-radius: 8px;
-  background: #eff5ff;
+  background: rgba(0, 217, 255, 0.05);
   color: var(--accent);
   text-align: center;
 }
@@ -456,7 +456,7 @@ body {
   grid-template-columns: 6rem 1fr;
   gap: 1rem;
   padding: 0.85rem 0;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--line);
 }
 
 .access-list span {
@@ -488,21 +488,23 @@ body {
 .form-field label span,
 .form-fieldset legend span,
 .agree-field span {
-  color: #b42318;
+  color: #ff3333;
 }
 
 .form-field input,
 .form-field textarea {
   width: 100%;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--line);
   border-radius: 6px;
   padding: 0.7rem;
   font: inherit;
+  background: #0a1628;
+  color: var(--text);
 }
 
 .form-field input:focus,
 .form-field textarea:focus {
-  outline: 2px solid #93c5fd;
+  outline: 2px solid #00d9ff;
   border-color: var(--accent);
 }
 
@@ -551,7 +553,7 @@ body {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background: #e8f0ff;
+  background: rgba(0, 217, 255, 0.15);
   color: var(--accent);
   font-weight: 700;
 }
@@ -593,13 +595,13 @@ body {
 
 /* Kyoto Tech-inspired editorial theme */
 :root {
-  --bg: #f4f4f1;
-  --surface: #fff;
-  --accent: #f20d16;
-  --text: #111;
-  --muted: #565656;
-  --ink: #050505;
-  --line: #d8d8d4;
+  --bg: #0a0f1a;
+  --surface: #0f1a2e;
+  --accent: #00d9ff;
+  --text: #e0e8ff;
+  --muted: #7a8aa8;
+  --ink: #050a15;
+  --line: #1a3a4a;
   --container: 1180px;
 }
 
