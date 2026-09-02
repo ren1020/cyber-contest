@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>過去の記録と結果 - 防衛省企業プロジェクト</title>
+    <meta name="description" content="サイバーコンテストの過去の記録と結果">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html">防衛省企業プロジェクト</a>
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+            <nav id="siteNav" class="site-nav" aria-label="主要ナビゲーション">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overview.html">大会概要</a></li>
+                    <li><a href="records.html" aria-current="page">過去の記録と結果</a></li>
+                    <li><a href="news.html">お知らせ</a></li>
+                    <li><a href="venue.html">参加のご案内</a></li>
+                    <li><a href="application.html">申し込みフォーム</a></li>
+                    <li><a href="quiz.html">問題集</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container records-page">
+        <section class="overview-hero">
+            <span class="eyebrow">Past Records & Results</span>
+            <h1>過去の記録と結果</h1>
+            <p>これまでの大会の開催記録や結果を紹介します。</p>
+        </section>
+
+        <section class="panel" aria-labelledby="history-title">
+            <div class="section-heading">
+                <span class="eyebrow">History</span>
+                <h2 id="history-title">過去の開催記録</h2>
+            </div>
+            <div class="history-grid">
+                <article class="history-card">
+                    <div class="history-year">2025</div>
+                    <div>
+                        <h3>令和7年度 サイバーコンテスト</h3>
+                        <p>オンライン形式で開催。Webや暗号などの問題に挑戦しました。</p>
+                    </div>
+                </article>
+                <article class="history-card">
+                    <div class="history-year">2024</div>
+                    <div>
+                        <h3>令和6年度 サイバーコンテスト</h3>
+                        <p>個人・チームで参加できる形式で、幅広い分野から出題されました。</p>
+                    </div>
+                </article>
+                <article class="history-card">
+                    <div class="history-year">2023</div>
+                    <div>
+                        <h3>令和5年度 サイバーコンテスト</h3>
+                        <p>サイバーセキュリティを学ぶ参加者が、実践的な問題に取り組みました。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel" aria-labelledby="results-title">
+            <div class="section-heading">
+                <span class="eyebrow">Results</span>
+                <h2 id="results-title">大会結果</h2>
+            </div>
+            <div class="results-table-wrap">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">順位</th>
+                            <th scope="col">参加形態</th>
+                            <th scope="col">得点</th>
+                            <th scope="col">備考</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1位</th>
+                            <td>チーム参加</td>
+                            <td>―</td>
+                            <td>優秀賞</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2位</th>
+                            <td>チーム参加</td>
+                            <td>―</td>
+                            <td>入賞</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3位</th>
+                            <td>個人参加</td>
+                            <td>―</td>
+                            <td>入賞</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="records-note">※ 結果や得点の詳細は、公式発表に合わせて更新してください。</p>
+            <a class="btn" href="https://www.mod.go.jp/j/approach/defense/cyber/c_contest/index.html">公式発表を確認</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">&copy; <span id="year"></span> 防衛省企業プロジェクト</div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

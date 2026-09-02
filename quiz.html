@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>問題集 - 防衛省企業プロジェクト</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">防衛省企業プロジェクト</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+      <nav id="siteNav" class="site-nav" aria-label="主要ナビゲーション">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="overview.html">大会概要</a></li>
+          <li><a href="records.html">過去の記録と結果</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+          <li><a href="venue.html">参加のご案内</a></li>
+          <li><a href="application.html">申し込みフォーム</a></li>
+          <li><a href="quiz.html">問題集</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="overview-hero">
+      <span class="eyebrow">Practice Quiz</span>
+      <h1>問題集</h1>
+      <p>参加前に基礎知識を確認し、出題形式に慣れておくための問題を用意しています。</p>
+    </section>
+
+    <section class="quiz panel" id="quizApp" aria-live="polite">
+      <div id="questionWrap">
+        <!-- 動的に質問を挿入 -->
+      </div>
+      <div class="controls">
+        <button id="prevBtn" class="btn">前へ</button>
+        <button id="nextBtn" class="btn">次へ</button>
+        <button id="submitBtn" class="btn">回答を提出</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; <span id="year"></span> 防衛省企業プロジェクト</div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+</body>
+</html>

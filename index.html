@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>防衛省企業プロジェクト</title>
+    <meta name="description" content="Simple starter site">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html">防衛省企業プロジェクト</a>
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+            <nav id="siteNav" class="site-nav" aria-label="主要ナビゲーション">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="overview.html">大会概要</a></li>
+                    <li><a href="records.html">過去の記録と結果</a></li>
+                    <li><a href="news.html">お知らせ</a></li>
+                    <li><a href="venue.html">参加のご案内</a></li>
+                    <li><a href="application.html">申し込みフォーム</a></li>
+                    <li><a href="quiz.html">問題集</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>ようこそ</h1>
+            <p>このサイトはサイバーコンテストの認知拡大を目的としたサイトです</p>
+        </section>
+        <section class="content panel">
+            <h2>サイバーコンテスト</h2>
+            <p>まずサイバーコンテストとは防衛省・自衛隊が主催するオンライン形式のセキュリティコンテスト（CTF大会）です。</p>
+            <p>サイバーコンテストは、サイバーセキュリティに関する知識やスキルを競い合う大会であり、参加者は様々な課題に挑戦しながら、攻撃と防御の技術を磨くことができます。</p>
+            <p>開催目的は優秀な人材を発見・育成することを目的として開催されています。</p>
+            <p>興味はあるけど応募する勇気がまだ湧かない方は下のリンクから過去問を解いてみてください！</p>
+            <a href="quiz.html" class="btn">過去問を解く</a>
+            <p>興味があり参加意欲がある方はぜひ応募をお願いします！</p>
+            <p>応募方法や日程や詳しいことは下のリンクから確認してください！</p>
+            <a href="application.html" class="btn">応募はこちら</a>
+        </section>
+
+        <section class="info-panel panel">
+            <div class="section-heading">
+                <span class="eyebrow">About CTF</span>
+                <h2>そもそもCTFとは？</h2>
+                <h3>CTFは Capture The Flag（キャプチャー・ザ・フラッグ） の略で、簡単に言うと、セキュリティの問題を解いて「flag」と呼ばれる文字列を見つけるゲーム</h3>
+            </div>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <h3>1. 目的</h3>
+                    <p>CTFは、サイバーセキュリティの知識を実践的に学び、問題解決力や論理的思考を鍛えるための大会です。</p>
+                </article>
+
+                <article class="info-card">
+                    <h3>2. 内容</h3>
+                    <p>Web、暗号、逆解析、Forensics、PWNなどの分野で出題され、攻撃・防御の両面を体験しながら技術を伸ばせます。</p>
+                </article>
+
+                <article class="info-card">
+                    <h3>3. 参加の魅力</h3>
+                    <p>初心者でも少しずつ挑戦でき、実際のセキュリティに対する理解が深まり、将来のキャリア形成にもつながります。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="difficulty-panel panel">
+            <div class="section-heading">
+                <span class="eyebrow">Difficulty</span>
+                <h2>難易度</h2>
+                <h3>でも防衛省のコンテストだから難しそうってイメージをお持ちでしょうか？</h3>
+                <h3>実は初心者でも解けるような問題が用意されてます！</h3>
+                <h3>しかも、一人で挑戦するの怖いっていう人もチームで参加可能です！</h3>
+            <h3>チーム(2名から3名)での参加も可能です！</h3>
+            </div>
+
+            <div class="difficulty-grid">
+                <article class="difficulty-card beginner">
+                    <div class="level-tag">Beginner</div>
+                    <h3>入門レベル</h3>
+                    <p>基本的なWebや暗号の知識を学び、問題の考え方に慣れる段階です。</p>
+                </article>
+
+                <article class="difficulty-card intermediate">
+                    <div class="level-tag">Intermediate</div>
+                    <h3>中級レベル</h3>
+                    <p>複数の分野を組み合わせた問題に取り組み、実践的な解法を身につけます。</p>
+                </article>
+
+                <article class="difficulty-card advanced">
+                    <div class="level-tag">Advanced</div>
+                    <h3>上級レベル</h3>
+                    <p>高度な逆解析やPWN、複雑な脆弱性の発見と再現に挑む難易度の高い問題です。</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">&copy; <span id="year"></span> 防衛省企業プロジェクト</div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

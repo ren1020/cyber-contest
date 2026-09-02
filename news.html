@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お知らせ - 防衛省企業プロジェクト</title>
+    <meta name="description" content="サイバーコンテストのお知らせ">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html">防衛省企業プロジェクト</a>
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+            <nav id="siteNav" class="site-nav" aria-label="主要ナビゲーション">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overview.html">大会概要</a></li>
+                    <li><a href="records.html">過去の記録と結果</a></li>
+                    <li><a href="news.html" aria-current="page">お知らせ</a></li>
+                    <li><a href="venue.html">参加のご案内</a></li>
+                    <li><a href="application.html">申し込みフォーム</a></li>
+                    <li><a href="quiz.html">問題集</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="overview-hero">
+            <span class="eyebrow">News</span>
+            <h1>お知らせ</h1>
+            <p>大会に関する最新情報を掲載します。</p>
+        </section>
+
+        <section class="panel" aria-labelledby="news-title">
+            <div class="section-heading">
+                <span class="eyebrow">Latest Information</span>
+                <h2 id="news-title">最新のお知らせ</h2>
+            </div>
+            <div class="news-list">
+                <article class="news-item">
+                    <time datetime="2026-08-26">2026.08.26</time>
+                    <div>
+                        <h3>大会サイトを公開しました</h3>
+                        <p>大会概要、過去の記録、会場アクセス、申し込み方法を掲載しています。</p>
+                    </div>
+                </article>
+                <article class="news-item">
+                    <time datetime="2026-08-26">2026.08.26</time>
+                    <div>
+                        <h3>過去問ページを更新しました</h3>
+                        <p>大会参加前の練習に活用できる問題集を公開しています。</p>
+                    </div>
+                </article>
+                <article class="news-item">
+                    <time datetime="2026-08-26">2026.08.26</time>
+                    <div>
+                        <h3>参加申し込みの受付について</h3>
+                        <p>申し込み期間や参加条件の詳細は、公式サイトの発表をご確認ください。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">&copy; <span id="year"></span> 防衛省企業プロジェクト</div>
+    </footer>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

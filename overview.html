@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大会概要 - 防衛省企業プロジェクト</title>
+    <meta name="description" content="サイバーコンテストの大会概要">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html">防衛省企業プロジェクト</a>
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+            <nav id="siteNav" class="site-nav" aria-label="主要ナビゲーション">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overview.html" aria-current="page">大会概要</a></li>
+                    <li><a href="records.html">過去の記録と結果</a></li>
+                    <li><a href="news.html">お知らせ</a></li>
+                    <li><a href="venue.html">参加のご案内</a></li>
+                    <li><a href="application.html">申し込みフォーム</a></li>
+                    <li><a href="quiz.html">問題集</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container overview-page">
+        <section class="overview-hero">
+            <span class="eyebrow">Competition Overview</span>
+            <h1>大会概要</h1>
+            <p>サイバーコンテストの開催形式や競技内容、参加までの流れを紹介します。</p>
+        </section>
+
+        <section class="overview-summary panel" aria-labelledby="summary-title">
+            <div class="section-heading">
+                <span class="eyebrow">Summary</span>
+                <h2 id="summary-title">大会の基本情報</h2>
+            </div>
+            <dl class="summary-list">
+                <div>
+                    <dt>大会名</dt>
+                    <dd>サイバーコンテスト</dd>
+                </div>
+                <div>
+                    <dt>開催形式</dt>
+                    <dd>オンライン形式</dd>
+                </div>
+                <div>
+                    <dt>参加人数</dt>
+                    <dd>個人または2名から3名のチーム</dd>
+                </div>
+                <div>
+                    <dt>対象</dt>
+                    <dd>サイバーセキュリティに興味のある方</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="overview-section" aria-labelledby="contents-title">
+            <div class="section-heading">
+                <span class="eyebrow">Contents</span>
+                <h2 id="contents-title">競技内容</h2>
+            </div>
+            <div class="overview-grid">
+                <article class="overview-card">
+                    <h3>問題に挑戦</h3>
+                    <p>Web、暗号、フォレンジック、逆解析など、さまざまな分野の問題に取り組みます。</p>
+                </article>
+                <article class="overview-card">
+                    <h3>Flagを発見</h3>
+                    <p>問題を調査して、隠された「flag」と呼ばれる文字列を見つけて提出します。</p>
+                </article>
+                <article class="overview-card">
+                    <h3>得点を競う</h3>
+                    <p>正解した問題の得点を競いながら、実践的なセキュリティ技術を身につけます。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="overview-section panel" aria-labelledby="flow-title">
+            <div class="section-heading">
+                <span class="eyebrow">How to Join</span>
+                <h2 id="flow-title">参加までの流れ</h2>
+            </div>
+            <ol class="flow-list">
+                <li><strong>情報を確認</strong><span>開催日程や応募条件を確認します。</span></li>
+                <li><strong>応募する</strong><span>公式ページから参加の申し込みを行います。</span></li>
+                <li><strong>準備する</strong><span>過去問に挑戦して、当日に向けて練習します。</span></li>
+                <li><strong>大会に参加</strong><span>仲間と協力しながら問題を解き進めます。</span></li>
+            </ol>
+            <a class="btn" href="https://www.mod.go.jp/j/approach/defense/cyber/c_contest/index.html">公式サイトで詳細を確認</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">&copy; <span id="year"></span> 防衛省企業プロジェクト</div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
