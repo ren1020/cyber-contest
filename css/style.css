@@ -265,7 +265,7 @@ body {
 
 .overview-card p,
 .flow-list span {
-  color: var(--muted);
+  color: #6b7280;
 }
 
 .history-grid {
@@ -296,7 +296,7 @@ body {
 
 .history-card p,
 .records-note {
-  color: var(--muted);
+  color: #6b7280;
 }
 
 .results-table-wrap {
@@ -444,7 +444,7 @@ body {
 }
 
 .map-placeholder p {
-  color: var(--muted);
+  color: #6b7280;
 }
 
 .access-list {
@@ -496,18 +496,18 @@ body {
 .form-field input,
 .form-field textarea {
   width: 100%;
-  border: 1px solid var(--line);
+  border: 1px solid #e5e7eb;
   border-radius: 6px;
   padding: 0.7rem;
   font: inherit;
-  background: #0a1628;
-  color: var(--text);
+  background: #ffffff;
+  color: #111827;
 }
 
 .form-field input:focus,
 .form-field textarea:focus {
-  outline: 2px solid #00d9ff;
-  border-color: var(--accent);
+  outline: 2px solid #93c5fd;
+  border-color: #0066ff;
 }
 
 .form-fieldset {
@@ -517,7 +517,7 @@ body {
 
 .form-fieldset label,
 .agree-field {
-  color: var(--muted);
+  color: #6b7280;
   font-weight: 400;
 }
 
@@ -528,7 +528,7 @@ body {
 
 .form-note {
   margin-top: 1rem;
-  color: var(--muted);
+  color: #6b7280;
   font-size: 0.9rem;
 }
 
@@ -597,13 +597,13 @@ body {
 
 /* Kyoto Tech-inspired editorial theme */
 :root {
-  --bg: #0a0f1a;
+  --bg: #ffffff;
   --surface: #0f1a2e;
   --accent: #00d9ff;
-  --text: #e0e8ff;
-  --muted: #7a8aa8;
-  --ink: #050a15;
-  --line: #1a3a4a;
+  --text: #111827;
+  --muted: #6b7280;
+  --ink: #050505;
+  --line: #e5e7eb;
   --container: 1180px;
 }
 
