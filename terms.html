@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>専門用語解説 - 防衛省企業プロジェクト</title>
+    <meta name="description" content="サイバーコンテストで使われる専門用語を初心者向けに解説します。">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html">防衛省企業プロジェクト</a>
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">☰</button>
+            <nav id="siteNav" class="site-nav" aria-label="主要ナビゲーション">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overview.html">大会概要</a></li>
+                    <li><a href="venue.html">参加のご案内</a></li>
+                    <li><a href="news.html">お知らせ</a></li>
+                    <li><a href="records.html">過去の記録と結果</a></li>
+                    <li><a href="application.html">申し込みフォーム</a></li>
+                    <li><a href="terms.html" aria-current="page">専門用語解説</a></li>
+                    <li><a href="quiz.html">問題集</a></li>
+                    <li><a href="cybersecurity.html">防衛省の取り組み</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="overview-hero">
+            <span class="eyebrow">Cybersecurity Basics</span>
+            <h1>専門用語解説</h1>
+            <p>サイバーコンテストに登場する言葉を、初めて学ぶ方にも分かりやすく紹介します。</p>
+        </section>
+
+        <section class="panel" aria-labelledby="first-words-title">
+            <div class="section-heading">
+                <span class="eyebrow">Start Here</span>
+                <h2 id="first-words-title">まず知っておきたい言葉</h2>
+            </div>
+            <dl class="term-grid">
+                <div class="term-card">
+                    <dt>CTF</dt>
+                    <dd>Capture The Flagの略です。セキュリティに関する問題を解き、隠された文字列「Flag」を見つけて得点を競う形式の大会です。</dd>
+                </div>
+                <div class="term-card">
+                    <dt>Flag</dt>
+                    <dd>問題を解いた証拠となる文字列です。見つけたFlagを専用の画面に提出すると、正解として得点が加算されます。</dd>
+                </div>
+                <div class="term-card">
+                    <dt>脆弱性</dt>
+                    <dd>コンピューターやプログラムにある、攻撃に利用される可能性のある弱点です。原因を理解し、修正や対策につなげます。</dd>
+                </div>
+                <div class="term-card">
+                    <dt>セキュリティ</dt>
+                    <dd>情報やシステムを、盗まれること、壊されること、勝手に変更されることなどから守るための仕組みや考え方です。</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="panel" aria-labelledby="category-title">
+            <div class="section-heading">
+                <span class="eyebrow">Challenge Categories</span>
+                <h2 id="category-title">問題分野に関する言葉</h2>
+            </div>
+            <div class="term-grid">
+                <article class="term-card">
+                    <h3>Web</h3>
+                    <p>WebサイトやWebアプリケーションの仕組みを調べ、入力値の扱いなどにある問題を探します。</p>
+                </article>
+                <article class="term-card">
+                    <h3>暗号</h3>
+                    <p>情報を読めない形に変える暗号の仕組みを調べ、鍵や規則を手がかりに元の情報を復元します。</p>
+                </article>
+                <article class="term-card">
+                    <h3>フォレンジック</h3>
+                    <p>ログやファイルなどの記録を調査し、何が起きたのか、どこに手がかりがあるのかを明らかにします。</p>
+                </article>
+                <article class="term-card">
+                    <h3>逆解析</h3>
+                    <p>プログラムを実行したり解析したりしながら、動作の仕組みや隠された処理を読み解きます。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel" aria-labelledby="next-step-title">
+            <div class="section-heading">
+                <span class="eyebrow">Next Step</span>
+                <h2 id="next-step-title">用語を知ったら挑戦してみよう</h2>
+            </div>
+            <p>分からない言葉があっても、問題文やヒントを手がかりに少しずつ調べれば大丈夫です。まずは問題集で簡単な問題から試してみましょう。</p>
+            <a class="btn" href="quiz.html">問題集を見る</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">&copy; <span id="year"></span> 防衛省企業プロジェクト</div>
+    </footer>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
